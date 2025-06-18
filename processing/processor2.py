@@ -7,14 +7,14 @@ import pandas as pd
 #from collections import Counter
 from processing.corrector_3 import correct_oscillations, plot_all, plot_modulated_signal, plot_residual_signal, build_xic, apply_polynomial_regression
 from utils.io_utils import convert_mzxml_2_mzml
-from validation.signal_validator2 import plot_corrected_signal_bpc, compare_bpc_values, compare_frequencies_over_rt,  build_variable_frequency_sine_and_plot_residual, verify_residual_signal, debug_correccion
+#from validation.signal_validator2 import plot_corrected_signal_bpc, compare_bpc_values, compare_frequencies_over_rt,  build_variable_frequency_sine_and_plot_residual, verify_residual_signal, debug_correccion
 #from simulated_corrector2_tryFile import plot_signal, correct_oscillations_per_bin, detect_oscillating_mzs, plot_tic_comparison, export_tic_signals_to_csv, export_xic_signals_combined_csv
 import time
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
-from processing.notch_filter import notch_filter, plot_xic_filtered
-from processing.wavelet_filter import correct_oscillations_wavelet, plot_original_and_residual
-from processing.gaussian_filter import apply_gaussian_filter
+from filtering.notch_filter import notch_filter, plot_xic_filtered
+from filtering.wavelet_filter import correct_oscillations_wavelet, plot_original_and_residual
+from filtering.gaussian_filter import apply_gaussian_filter
 from utils.fft_utils2 import local_frequencies_with_fft
 
 def export_xic_signals_combined_csv(rts, xic_signals, modulated_signals, residual_signals, output_csv_path):
