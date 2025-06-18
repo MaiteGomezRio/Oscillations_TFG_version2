@@ -9,8 +9,8 @@ import os
 if __name__ == "__main__":
     
 
-    file_path = "C:/Users/maipa/repos/oscilations_TFG_repository/FILES/TESTS/MSCONVERT_CTRL_103_01_c_afterreboot_original.mzML"
-    save_as = "C:/Users/maipa/repos/oscilations_TFG_repository/FILES/TESTS/CTRL_103_01_c_afterreboot_corrected.mzML"
+    file_path = "C:/Users/maipa/repos/oscilations_TFG_repository/FILES/IO/MSCONVERT_CTRL_103_01_c_afterreboot_original.mzML"
+    save_as = "C:/Users/maipa/repos/oscilations_TFG_repository/FILES/IO/CTRL_103_01_c_afterreboot_corrected.mzML"
 
     if os.path.exists(save_as):
         print(f"El archivo {save_as} ya existe. Eliminándolo para reemplazarlo...")
