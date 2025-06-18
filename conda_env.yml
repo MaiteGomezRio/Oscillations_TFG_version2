@@ -1,0 +1,15 @@
+name: oscilations_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - setuptools
+  - wheel
+  - pip:
+      - pandas
+      - massql
+      - pyopenms
+      - pyteomics
